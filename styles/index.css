@@ -8,10 +8,20 @@ body {
     height: 100vh;
 }
 
-header {
+/* header with nav bar */
+.head {
     height: 8vh;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh auto;
 }
 
+.head__nav {
+    display: none;
+}
+
+/* main content */
 main  {
     display: flex;
     flex-direction: column;
@@ -63,6 +73,34 @@ p {
 
 /* tablet screen */
 @media screen and (min-width:321px) and (max-width: 768px) {
+    .fa-ellipsis {
+        display: none;
+    }
+
+    .head__nav {
+        display: contents;
+    }
+
+    .head__navbar {
+        width: 50%;
+    }
+
+    .head__nav ul {
+        list-style-type: none;
+    }
+    
+    .head__nav li {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 140% */
+        color: #242635;
+        margin-left: 10%;
+        float: left;
+    }
+
     h1 {
         font-size: 72px;
         line-height: 83px;
@@ -87,8 +125,40 @@ p {
 
 /* desktop screen */
 @media screen and (min-width:769px) {
-    header {
-        height: 12vh;
+    .head {
+        justify-content: flex-start;
+        margin: 3vh auto;
+        max-width: 85%;
+    }
+
+    .fa-ellipsis {
+        display: none;
+    }
+
+    .head__nav {
+        display: contents;
+    }
+
+    .head__navbar {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .head__nav ul {
+        list-style-type: none;
+    }
+    
+    .head__nav li {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 140% */
+        color: #242635;
+        margin-left: 10%;
+        float: left;
     }
 
     main  {
@@ -113,6 +183,7 @@ p {
     .main__text {
         max-width: 30%;
         justify-content: center;
+        transform: translateY(-10%);
     }
 
     .main__img {
