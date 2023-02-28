@@ -102,6 +102,10 @@ p {
 
     @include m.navbar($width: 40%);
 
+    .head__nav a:hover {
+        color: #f59804;
+    }
+
     main  {
         flex-direction: row;
     }
