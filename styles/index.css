@@ -21,10 +21,9 @@ main  {
     max-width: 66%;
     min-height: 33vh;
     margin: 5vh auto;
-    justify-content: flex-end;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 h1 {
