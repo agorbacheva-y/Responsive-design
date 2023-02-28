@@ -1,0 +1,135 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+/* header with nav bar */
+.head {
+    min-height: 8vh;
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+}
+
+/* hide nav bar for mobile display */
+.head__nav {
+    display: none;
+}
+
+/* main content */
+main  {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__text {
+    max-width: 66%;
+    min-height: 33vh;
+    width: 100%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+h1 {
+    @include m.font-one;
+}
+
+p {
+    @include m.font-two;
+}
+
+.main__img {
+    background-image: url("/images/soup-s.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    max-width: 80%;
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+    display: inline-flex;
+    justify-self: flex-end;
+}
+
+/* tablet screen */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    
+    @include m.navbar;
+
+    h1 {
+        font-size: 72px;
+        line-height: 83px;
+        /* identical to box height, or 115% */
+        letter-spacing: -1.6px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 33px;
+        /* or 150% */
+    }
+
+    .main__text {
+        max-width: 75%;
+    }
+
+    .main__img {
+        background-image: url("/images/soup-m.png");
+    }
+}
+
+/* desktop screen */
+@media screen and (min-width: 769px) {
+    .head {
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: auto;
+        max-width: 83%;
+        min-height: 12vh;
+    }
+
+    @include m.navbar($width: 40%);
+
+    main  {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 90px;
+        line-height: 102px;
+        /* identical to box height, or 113% */
+        letter-spacing: -2px;
+        text-align: left;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 33px;
+        /* or 150% */
+        text-align: left;
+    }
+
+    .main__text {
+        max-width: 30%;
+        justify-content: center;
+        transform: translateY(-10%);
+    }
+
+    .main__img {
+        background-image: url("/images/soup-l.png");
+        max-width: 40%;
+        min-height: 80vh;
+    }
+}

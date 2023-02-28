@@ -1,0 +1,58 @@
+@use 'variables';
+
+@mixin font-one($size: 36px, $line: 40px, $space: -0.8px) {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $size;
+    line-height: $line;
+    text-align: center;
+    letter-spacing: $space;
+    color: v.$primary-color;
+}
+
+@mixin font-two($size: 12px, $line: 18px) {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $size;
+    line-height: $line;
+    /* or 150% */
+    text-align: center;
+    color: v.$primary-color;
+}
+
+@mixin navbar($width: 50%) {
+    .fa-ellipsis {
+        display: none;
+    }
+
+    .head__nav {
+        display: contents;
+    }
+
+    .head__navbar {
+        width: $width;
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height, or 140% */
+            color: v.$primary-color;
+            float: left;
+        }
+
+        a {
+            margin-left: 10%;
+        }
+    }
+}

@@ -13,15 +13,9 @@ body {
   min-height: 8vh;
   max-width: 80%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   margin: auto;
 }
 
@@ -32,13 +26,8 @@ body {
 
 /* main content */
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .main__text {
@@ -46,16 +35,9 @@ main {
   min-height: 33vh;
   width: 100%;
   margin: 5vh auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 h1 {
@@ -90,8 +72,6 @@ p {
   width: 100%;
   min-height: 50vh;
   margin: auto;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   justify-self: flex-end;
 }
@@ -106,12 +86,8 @@ p {
   }
   .head__navbar {
     width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .head__nav ul {
     list-style-type: none;
@@ -150,12 +126,8 @@ p {
 /* desktop screen */
 @media screen and (min-width: 769px) {
   .head {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-end;
     margin: auto;
     max-width: 83%;
     min-height: 12vh;
@@ -168,12 +140,8 @@ p {
   }
   .head__navbar {
     width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .head__nav ul {
     list-style-type: none;
@@ -193,10 +161,7 @@ p {
     margin-left: 10%;
   }
   main {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   h1 {
     font-size: 90px;
@@ -213,15 +178,12 @@ p {
   }
   .main__text {
     max-width: 30%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    justify-content: center;
+    transform: translateY(-10%);
   }
   .main__img {
     background-image: url("/images/soup-l.png");
     max-width: 40%;
     min-height: 80vh;
   }
-}
+}/*# sourceMappingURL=index.css.map */
