@@ -10,11 +10,12 @@ body {
 
 /* header with nav bar */
 .head {
-    height: 8vh;
+    min-height: 8vh;
     max-width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: 3vh auto;
+    margin: auto;
+    align-items: flex-end;
 }
 
 .head__nav {
@@ -83,6 +84,8 @@ p {
 
     .head__navbar {
         width: 50%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .head__nav ul {
@@ -127,8 +130,10 @@ p {
 @media screen and (min-width:769px) {
     .head {
         justify-content: flex-start;
-        margin: 3vh auto;
-        max-width: 85%;
+        align-items: flex-end;
+        margin: auto;
+        max-width: 83%;
+        min-height: 12vh;
     }
 
     .fa-ellipsis {
