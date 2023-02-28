@@ -100,8 +100,11 @@ p {
         line-height: 22px;
         /* identical to box height, or 140% */
         color: #242635;
-        margin-left: 10%;
         float: left;
+    }
+
+    .head__nav a {
+        margin-left: 10%;
     }
 
     h1 {
@@ -164,6 +167,10 @@ p {
         color: #242635;
         margin-left: 10%;
         float: left;
+    }
+
+    .head__nav a {
+        margin-left: 10%;
     }
 
     main  {
