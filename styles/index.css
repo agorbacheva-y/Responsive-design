@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height, or 110% */
+    text-align: center;
+    letter-spacing: -0.8px;
+    color: #242635;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    text-align: center;
+    color: #242635;
+}
+
+main  {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__text {
+    max-width: 70%;
+    min-height: 37%;
+    margin: 5% auto;
+   
+}
+
+.main__img {
+    background-image: url("/images/soup-s.png");
+    object-fit: cover;
+    max-width: 256px;
+    width: 100%;
+    min-height: 284px;
+    margin: auto;
+}
+
+@media screen and (min-width:321px) and (max-width: 768px) {
+    h1 {
+        font-size: 72px;
+        line-height: 83px;
+        /* identical to box height, or 115% */
+        letter-spacing: -1.6px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 33px;
+        /* or 150% */
+    }
+
+    .main__text {
+        max-width: 75%;
+    }
+
+    .main__img {
+        background-image: url("/images/soup-m.png");
+        max-width: 617px;
+        width: 100%;
+        min-height: 512px;
+    }
+}
