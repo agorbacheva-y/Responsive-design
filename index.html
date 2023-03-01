@@ -46,7 +46,14 @@
         </div>
         
         <!-- image -->
-        <div class="main__img"></div>
+        <div class="main__img">
+            <picture>
+                <source media="(max-width: 320px)" srcset="/images/soup-s.png">
+                <source media="(max-width: 768px)" srcset="/images/soup-m.png">
+                <source media="(min-width: 769px)" srcset="/images/soup-l.png">
+                <img src="/images/soup-s.png" alt="soup">
+            </picture>
+        </div>
     </main>
 </body>
 </html>

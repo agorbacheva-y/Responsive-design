@@ -63,16 +63,17 @@ p {
 }
 
 .main__img {
-  background-image: url("/images/soup-s.png");
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: flex;
   max-width: 80%;
   width: 100%;
   min-height: 50vh;
   margin: auto;
-  display: inline-flex;
-  justify-self: flex-end;
+}
+.main__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* tablet screen */
@@ -137,9 +138,6 @@ p {
   }
   .main__text {
     max-width: 75%;
-  }
-  .main__img {
-    background-image: url("/images/soup-m.png");
   }
 }
 /* desktop screen */
@@ -220,7 +218,6 @@ p {
     transform: translateY(-10%);
   }
   .main__img {
-    background-image: url("/images/soup-l.png");
     max-width: 40%;
     min-height: 80vh;
   }
