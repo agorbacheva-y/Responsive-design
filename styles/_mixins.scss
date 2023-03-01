@@ -37,17 +37,10 @@
         justify-content: flex-end;
         list-style-type: none;
 
-        li {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
-            /* identical to box height, or 140% */
+        a {
+            text-decoration: none;
             color: v.$primary-color;
-            float: left;
-            position: relative;
-
+            
             &::after {
                 content: '';
                 position: absolute;
@@ -71,7 +64,16 @@
             }
         }
 
-        a {
+        li {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height, or 140% */
+            color: v.$primary-color;
+            float: left;
+            position: relative;
             margin-left: 10%;
         } 
     }

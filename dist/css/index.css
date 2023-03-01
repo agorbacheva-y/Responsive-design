@@ -89,18 +89,11 @@ p {
     justify-content: flex-end;
     list-style-type: none;
   }
-  .head__navbar li {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height, or 140% */
+  .head__navbar a {
+    text-decoration: none;
     color: #242635;
-    float: left;
-    position: relative;
   }
-  .head__navbar li::after {
+  .head__navbar a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -112,14 +105,23 @@ p {
     transition: transform 0.3s ease-out;
     transform: scaleX(0);
   }
-  .head__navbar li:hover::after {
+  .head__navbar a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .head__navbar li:active {
+  .head__navbar a:active {
     color: #f59804;
   }
-  .head__navbar a {
+  .head__navbar li {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 140% */
+    color: #242635;
+    float: left;
+    position: relative;
     margin-left: 10%;
   }
   h1 {
@@ -161,18 +163,11 @@ p {
     justify-content: flex-end;
     list-style-type: none;
   }
-  .head__navbar li {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height, or 140% */
+  .head__navbar a {
+    text-decoration: none;
     color: #242635;
-    float: left;
-    position: relative;
   }
-  .head__navbar li::after {
+  .head__navbar a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -184,14 +179,23 @@ p {
     transition: transform 0.3s ease-out;
     transform: scaleX(0);
   }
-  .head__navbar li:hover::after {
+  .head__navbar a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .head__navbar li:active {
+  .head__navbar a:active {
     color: #f59804;
   }
-  .head__navbar a {
+  .head__navbar li {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 140% */
+    color: #242635;
+    float: left;
+    position: relative;
     margin-left: 10%;
   }
   main {
