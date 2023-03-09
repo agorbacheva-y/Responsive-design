@@ -131,3 +131,44 @@ p {
         min-height: 80vh;
     }
 }
+
+.nav {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: v.$secondary-color;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.nav a {
+    @include m.font-two;
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: v.$primary-color;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background-color: #e3cca2;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: transparent;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}

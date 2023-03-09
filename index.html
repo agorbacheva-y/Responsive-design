@@ -23,7 +23,17 @@
         
         <!-- Ellipsis for mobile screen -->
         <div class="head__icon">
-            <i class="fa-solid fa-ellipsis"></i>
+            <a class="open-btn" onclick="openNav()">
+                <i class="fa-solid fa-ellipsis"></i>
+            </a>
+        </div>
+
+        <!-- Responsive navbar for mobile screen -->
+        <div id="side-nav" class="nav">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+            <a href="#">Works</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </div>
 
         <!-- Nav bar for tablet, desktop screens -->
@@ -36,7 +46,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <!-- content -->
         <div class="main__text">
             <h1>Recipes</h1>
@@ -55,5 +65,18 @@
             </picture>
         </div>
     </main>
+
+    <!-- responsive navbar -->
+    <script>
+        function openNav() {
+          document.getElementById("side-nav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("side-nav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 </html>
